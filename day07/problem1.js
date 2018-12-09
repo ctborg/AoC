@@ -101,16 +101,9 @@ while(!queue.isEmpty()) {
   // go to first child,
   result = g.bfs(nextNode);
   prereqs = result.prereq;
-  missingPreReqs=[]
 
   // if prereqs not comleted, remove from queue
-  prereqs.forEach(i => {
-    if (!answer.has(i)){
-      missingPreReqs.push(true)
-    };
-  })
- 
-  if(missingPreReqs.length){
+  if(prereqs.some(i => !answer.has(i))){
     queue.dequeue();
     nextNode = queue.front();
   } else {
