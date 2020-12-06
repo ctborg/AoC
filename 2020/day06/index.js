@@ -9,11 +9,12 @@ let input = await fetchInput();
 
 let parser = i => i.trim().split('\n\n');
 
-let part1 = (i) => {
+let part1 = i => {
   let count = 0;
 
-  parser(i).forEach( (j) => {
+  parser(i).forEach( j => {
    let vals = {};
+   // strip out newlines, store in hash
    j.replace(/\n/g,'').split('').forEach(k => vals[k] = null);
    count += Object.keys(vals).length;
   })
@@ -26,13 +27,13 @@ part1(input);
 let part2 = i => {
   let count = 0;
 
-  parser(i).forEach( (j) => {
+  parser(i).forEach( j => {
     let vals = {};
-    peeps = j.split('\n');
-    peeps.forEach(peep => {
+    peeps = j.split('\n').forEach(peep => {
+      // store the count of each answer
       peep.split('').forEach(k => vals[k] = vals[k] ? vals[k] + 1 : 1);
     });
-   
+    // filter out answers that don't match number of peeps answering.
     count += Object.entries(vals).filter(i => i[1] == peeps.length).length;
   })
 
