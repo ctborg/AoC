@@ -1,12 +1,18 @@
-let day = 1;
+let input = document.querySelector('pre').innerHTML;
 
-let fetchInput = async () => {
-  let resp = await fetch(`https://adventofcode.com/2022/day/${day}/input`);
-  return resp.text();
-}
+input = input.split('\n\n').map(i => i.split('\n'));
 
-let input = await fetchInput();
+let calories = input.map((i) => {
+  return i.reduce((j, k) => Number(j) + Number(k));
+})
 
-let parse = (i) => {
-  return data.split("\n");
-}
+// part 1
+console.log(Math.max(...calories));
+
+//part 2
+console.log(
+  calories
+    .sort((a, b) => b - a)
+    .slice(0, 3)
+    .reduce((j, k) => Number(j) + Number(k));
+)
