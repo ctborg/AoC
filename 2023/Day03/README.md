@@ -1,7 +1,9 @@
 # Day 03
 
 ## First prompt
-Write javascript code. The input provided consists of  number and symbols in 2d space. Any number adjacent to a symbol, even diagonally, is a "part number" and should added to a variable called part sum. Here is the input: "467..114..
+Write javascript code. The input provided consists of  number and symbols in 2d space. Any number adjacent to a symbol, even diagonally, is a "part number" and should added to a variable called part sum. Here is the input: 
+```
+467..114..
 ...*......
 ..35..633.
 ......#...
@@ -10,7 +12,8 @@ Write javascript code. The input provided consists of  number and symbols in 2d 
 ..592.....
 ......755.
 ...$.*....
-.664.598.."
+.664.598..
+```
 
 ## Second prompt
 Almost, two numbers are not added to the partSum because they are not adjacent to a symbol: 114 (top right) and 58 (middle right). Every other number is adjacent to a symbol and so it is added; the sum should be 4361
