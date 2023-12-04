@@ -36,3 +36,5 @@ make a slight modification to the code. So that for each game played, what is th
 Good. Continuing, modify this code,for each game multiply the values of red, green, and blue cubes.  Call that the PowerOfCubes. Then sum the value of each PowerOfCubes.
 
 Done. 2 stars.
+
+Onward to [Day 03](https://github.com/ctborg/AoC/tree/master/2023/Day03)
