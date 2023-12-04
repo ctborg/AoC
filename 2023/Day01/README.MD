@@ -22,3 +22,4 @@ It's still not returning the correct values for eightwothree. Let's try a differ
 
 I finally get to some usable output. I had to tweak the output manually to get a workable solution. Overall I spent way more tweatking the promps, and debugging the code.
 
+Onward to [Day 02](https://github.com/ctborg/AoC/tree/master/2023/Day02)
