@@ -58,3 +58,4 @@ the 54 is being included in the product sum. It shouldn't be because there are n
 
 This produced working code. I did have to add some debugging to figure out what was going on, but overll time was around 15 minutes to complete the challenge.
 
+Onward to [Day 04](https://github.com/ctborg/AoC/tree/master/2023/Day04)
