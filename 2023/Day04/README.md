@@ -55,3 +55,5 @@ I'm getting an infinite loop
 
 
 That returned a brute force solution that allowed me to get a second star.
+
+Onward to [Day 05](https://github.com/ctborg/AoC/tree/master/2023/Day05)
