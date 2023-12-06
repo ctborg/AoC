@@ -2,7 +2,7 @@
 
 Progress today. Solved both stars using just 2 prompts.
 
-# First prompt
+## First prompt
 
 Holding down the button charges the boat, and releasing the button allows the boat to move.  Boats move faster if their button was held longer, but time spent holding the button counts against the total race time.  For example:
 Time:      7  15   30
@@ -14,11 +14,12 @@ This document describes three races:
 In the third race, you could hold the button for at least 11 milliseconds and no more than 19 milliseconds and still beat the record, a total of 9 ways you could win.   Write a javascript program to calculate the number of ways you can beat the record in each race; in this example, if you multiply these values together, you get 288 (4 * 8 * 9). 
 
 
-# Second prompt
+## Second prompt
 
 if my input changes to Time:        [my input time]
 Distance:   [my input distance] the calculateWaysToWin function fails to run. 
 
+## Summary
 Fairly impressive. The entire time to solve was less than 5 minutes, including reading time.
 
 Onward to [Day 07](https://github.com/ctborg/AoC/tree/master/2023/Day07)
