@@ -20,3 +20,5 @@ if my input changes to Time:        [my input time]
 Distance:   [my input distance] the calculateWaysToWin function fails to run. 
 
 Fairly impressive. The entire time to solve was less than 5 minutes, including reading time.
+
+Onward to [Day 07](https://github.com/ctborg/AoC/tree/master/2023/Day07)
