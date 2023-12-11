@@ -51,7 +51,7 @@ The LLM correctly calls out the issue with memory usage, and provides a theoreti
 ## Prompt 5
 You're correct in your assumption. The expanded rows and columns contain no galaxies. Rewrite the program with this in mind.
 
-##
+## Prompt 6
 (off by one error)
 Okay, that's not quite right. Let's try two examples if we were to expand by 10, then the value should be 1030. If we were to expand by 100, then the value should be 8410.
 
