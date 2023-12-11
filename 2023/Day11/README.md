@@ -1,11 +1,10 @@
-# Day 11
+# Day 11 Reflection
 
-The last few days are missing prompt history. I'll try to track them down, I recall using many prompts, and being fairly frustrated at my approach. I thought I'd change it up a little, 
-and break down the problem for the LLM. I was a lot more successful today.
+In recent days, I noticed missing prompt history and set out to find it. My frustration was mounting due to frequent prompt usage and ineffective strategies. However, I shifted my approach, breaking down the problem more effectively for the language model. Today's success was a significant improvement.
 
 ## Prompt 1
 
-The input includes empty space (.) and galaxies (#).  Here is an example: 
+This task involves a grid represented by empty spaces (.) and galaxies (#). Example:
 ```
 ...#......
 .......#..
@@ -18,11 +17,11 @@ The input includes empty space (.) and galaxies (#).  Here is an example:
 .......#..
 #...#....
 ```
-
-Write a javascript program to sum of the lengths of the shortest path between every pair of galaxies. 
+The goal is to write a JavaScript program that calculates the sum of the shortest paths between each pair of galaxies.
 
 ## Prompt 2
-Good. Now modify the program so that before you calculate the short paths, any rows or columns that contain no galaxies should all actually be twice as big. So in the input given, the input should be modified by a function called expandUniverse, and it should look like this: 
+
+Enhance the program by enlarging the grid before calculating paths. Rows and columns without galaxies should double in size. This is achieved through an `expandUniverse` function. After modification, the grid looks like:
 ```
 ....#........
 .........#...
@@ -37,23 +36,19 @@ Good. Now modify the program so that before you calculate the short paths, any r
 .........#...
 #....#.......
 ```
-
 ## Prompt 3
-So for the expandUniverse function, the "doubling" actually means just add a new row to right (if it is a column) or below, (if it is a row).
 
-This was enough to solve Part 1.
+The `expandUniverse` function effectively doubles a row by adding a new one below, or doubles a column by adding one to the right. This adjustment was key for solving Part 1.
 
 ## Prompt 4
-Good. Now modify the expandUniverse function so that instead of adding a another row, each empty row should be replaced with 1000000 empty rows, and each empty column should be replaced with 1000000 empty columns.
 
-The LLM correctly calls out the issue with memory usage, and provides a theoretical solution.
+Further modify `expandUniverse` so that it replaces each empty row and column with 1,000,000 of their kind, instead of just doubling. This leads to a discussion about memory usage and a theoretical solution is provided.
 
 ## Prompt 5
-You're correct in your assumption. The expanded rows and columns contain no galaxies. Rewrite the program with this in mind.
+
+Acknowledging that the expanded rows and columns lack galaxies, the program needs rewriting with this consideration.
 
 ## Prompt 6
-(off by one error)
-Okay, that's not quite right. Let's try two examples if we were to expand by 10, then the value should be 1030. If we were to expand by 100, then the value should be 8410.
 
-That was enough to get the second gold star.
+A minor correction is needed. For instance, if expansion is by 10, the correct value is 1030. For an expansion of 100, it should be 8410. These adjustments led to achieving the second gold star.
 
