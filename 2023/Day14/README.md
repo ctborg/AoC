@@ -64,5 +64,6 @@ repating pattern.
 I'm getting an error in the IsMatrixEqual function. "Cannot read properties of undefined (reading '0')"
 ```
 
+Thiw as enought to solve part 2. Again, I eyeballed the repeated pattern, and only ran the program for 1000 cycles to the solution. 
 
-
+Onward to [Day 15](https://github.com/ctborg/AoC/tree/master/2023/Day14)
