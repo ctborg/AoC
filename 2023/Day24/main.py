@@ -33,7 +33,7 @@ def solve_particle_motion(input_file):
             motion_equations.append(Eq(start_z + velocity_z * var(time_symbol), position_values[2] + velocity_values[2] * var(time_symbol)))  # Z-axis equation
 
             # Limit the number of particles to process
-            if len(motion_equations) > 9:
+            if len(motion_equations) > 6:
                 break
 
     # Solve the system of equations for particle motion
