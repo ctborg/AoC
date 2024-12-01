@@ -38,5 +38,8 @@ While LLMs play a significant role, this is a collaborative effort between human
 Follow along as I compare the AI-assisted problem-solving process between 2023 and 2024! 🎅💻
 
 ## Personal Leaderboard
+```
+      --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
   1   11:25:08  61420      0   11:27:33  56770      0
+```
